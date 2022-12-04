@@ -1,5 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Button, img } from 'react-native';
+import {Link} from "react-router-dom";
+import {Link} from "expo-route"
 // import * as Linking from 'expo-linking';
 // import { A } from '@expo/html-elements';
 
@@ -10,7 +12,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>Criado por Ândrya Silvestre</Text>
-      <Text>Clique na tela</Text>
+      <link to="/imagem">Clique aqui para ver a moça mais linda do mundo</link>
       <StatusBar style="auto" />
     </View>
   );
