@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Button, img } from 'react-native';
-import {Link} from "react-router-dom";
-import {Link} from "expo-route"
+import { StyleSheet, Text, View, Button, Image, TouchableOpacity, Linking} from 'react-native';
+import TelaSec from "./telaSec";
+
 // import * as Linking from 'expo-linking';
 // import { A } from '@expo/html-elements';
 
@@ -11,10 +11,16 @@ import {Link} from "expo-route"
 export default function App() {
   return (
     <View style={styles.container}>
+      <Text> Para ver a moça mais linda do mundo...</Text>
+      <Text> Clique aqui...</Text>
+      <TouchableOpacity style={styles.button1} onPress={() => navigation.navigate("/assets/img/maggie.png")}></TouchableOpacity>
       <Text>Criado por Ândrya Silvestre</Text>
-      <link to="/imagem">Clique aqui para ver a moça mais linda do mundo</link>
+      <Text>HTML é muito superior.</Text>
       <StatusBar style="auto" />
     </View>
+
+
+
   );
 }
 
@@ -26,4 +32,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  button1: {
+    backgroundColor: '#fff',
+    height: '30px',
+    width: '30px'
+  }
 });
